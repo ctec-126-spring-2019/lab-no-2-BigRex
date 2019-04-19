@@ -15,6 +15,8 @@
         <div class="row mt-5">
             <div class="col-12">
                 <h1>Lab 2 - Problem 2</h1>
+                <h2>Enter a Number</h2>
+                <input type="number"  id="number" /><br><br>
                 <button type="button" class="btn btn-success" onclick="startThings()">START</button>
                 <div id="output" class="mt-5"></div>
             </div>
@@ -29,15 +31,78 @@
 <script>
     function startThings(){
         let romanNumeral; // do not modify
+        let x = document.getElementById("number").value;
         // your code goes here
         // be sure to assign the roman numeral to the variable romanNumeral
         // it will be used to display it on the web page using the code below
+        switch(x){
+           case "0" :
+           romanNumeral = "The number is too low" ;
+           break;
+          
+           case "1":
+        
+            romanNumeral = "The Roman Numeral for "+x+" is I";
+            break;
+            
+            case "2":
 
+            romanNumeral = "The Roman Numeral for "+x+" is II";
+            break;
+        
+            case "3":
+        
+            romanNumeral = "The Roman Numeral for "+x+" is III";
+            break;
+        
+            case "4": 
+       
+            romanNumeral = "The Roman Numeral for "+x+" is IV";
+            break;
+        
+            case "5":
+
+            romanNumeral = "The Roman Numeral for "+x+" is V";
+            break;
+        
+            case "6":
+
+            romanNumeral = "The Roman Numeral forr "+x+" is VI";
+            break;
+        
+            case "7":
+
+            romanNumeral = "The Roman Numeral for "+x+" is VII";
+            break;
+
+            case "8":
+
+            romanNumeral = "The Roman Numeral for "+x+" is VIII";
+            break;
+
+            case "9":
+
+            romanNumeral = "The Roman Numeral for "+x+" is IX";
+            break;
+
+        
+            case "10":
+
+            romanNumeral = "The Roman Numeral for "+x+" is X";
+            break;
+            
+            default:
+            romanNumeral = "The number is too high";
+        }
+        
+        
+        
 
 
         // do not modify start
         let outputDiv = document.getElementById('output');
         outputDiv.innerHTML = romanNumeral;
+        
         // do not modify end
     }
 </script>

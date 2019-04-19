@@ -15,6 +15,8 @@
         <div class="row mt-5">
             <div class="col-12">
                 <h1>Lab 2 - Problem 1</h1>
+                <h2>Enter a Number</h2>
+                <input type="number" name="number" id="number" /><br><br>
                 <button type="button" class="btn btn-success" onclick="startThings()">START</button>
                 <div id="output" class="mt-5"></div>
             </div>
@@ -29,9 +31,59 @@
 <script>
     function startThings(){
         let romanNumeral; // do not modify
+        let x = document.getElementById("number").value;
         // your code goes here
         // be sure to assign the roman numeral to the variable romanNumeral
         // it will be used to display it on the web page using the code below
+        if (x < 1 ){
+           romanNumeral = "The number is too low" ;
+          
+        }else if(x==1){
+        
+            romanNumeral = "The Roman Numeral for "+x+" is I";
+            
+        }else if(x==2){
+
+            romanNumeral = "The Roman Numeral for "+x+" is II";
+        
+        }else if (x==3){
+        
+            romanNumeral = "The Roman Numeral for "+x+" is III";
+        
+        }else if (x==4){ 
+       
+            romanNumeral = "The Roman Numeral for "+x+" is IV";
+        
+        }else if (x==5){
+
+            romanNumeral = "The Roman Numeral for "+x+" is V";
+        
+        }else if (x==6){
+
+            romanNumeral = "The Roman Numeral forr "+x+" is VI";
+        
+        }else if (x==7){
+
+            romanNumeral = "The Roman Numeral for "+x+" is VII";
+
+        }else if (x==8){
+
+            romanNumeral = "The Roman Numeral for "+x+" is VIII";
+
+        }else if (x==9){
+
+            romanNumeral = "The Roman Numeral for "+x+" is IX";
+
+        }
+        else if (x==10){
+
+            romanNumeral = "The Roman Numeral for "+x+" is X";
+
+        }
+        else if (x>10){
+            romanNumeral = "The number is too high";
+        
+        }
 
 
 
